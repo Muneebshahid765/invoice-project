@@ -1,0 +1,207 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logoIcon {
+  font-size: 1.5rem;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.headerRight {
+  display: flex;
+  gap: 1rem;
+}
+
+.main {
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: hsl(var(--foreground));
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: hsl(var(--muted-foreground));
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.planCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.popularCard {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.planName {
+  font-size: 1.25rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.period {
+  font-size: 1rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.checkIcon {
+  color: hsl(142 76% 36%);
+  font-weight: bold;
+}
+
+.planButton {
+  width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* FAQ */
+.faq {
+  margin-bottom: 4rem;
+}
+
+.faqTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.faqItem {
+  padding: 1.5rem;
+  background: hsl(var(--muted) / 0.3);
+  border-radius: 0.5rem;
+}
+
+.faqItem h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.faqItem p {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 3rem;
+  background: hsl(var(--muted) / 0.3);
+  border-radius: 1rem;
+}
+
+.cta h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cta p {
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid hsl(var(--border));
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .plansGrid {
+    grid-template-columns: 1fr;
+  }
+}

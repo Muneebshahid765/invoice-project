@@ -1,0 +1,221 @@
+.container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: hsl(var(--muted-foreground));
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.filtersCard {
+  margin: 1.5rem 0;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.searchInput {
+  flex: 1;
+  max-width: 300px;
+}
+
+.filterSelect {
+  min-width: 150px;
+}
+
+.bulkCard {
+  margin-bottom: 1rem;
+  background: hsl(var(--primary) / 0.05);
+  border-color: hsl(var(--primary) / 0.2);
+}
+
+.bulkActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.bulkButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tableContainer {
+  padding: 0;
+}
+
+.skeletonContainer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skeletonRow {
+  height: 48px;
+  width: 100%;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.emptyState h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+}
+
+.emptyState p {
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1.5rem;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.invoiceNumber {
+  font-weight: 600;
+}
+
+.invoiceNumber a {
+  color: hsl(var(--primary));
+  text-decoration: none;
+}
+
+.invoiceNumber a:hover {
+  text-decoration: underline;
+}
+
+.actionsColumn {
+  text-align: right;
+  min-width: 300px;
+}
+
+.rowActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.deleteButton {
+  color: hsl(var(--destructive));
+}
+
+.deleteButton:hover {
+  color: hsl(var(--destructive));
+  background: hsl(var(--destructive) / 0.1);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid hsl(var(--border));
+}
+
+.pageInfo {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+@media (max-width: 1024px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchForm {
+    min-width: 100%;
+  }
+
+  .filterSelect {
+    min-width: 100%;
+  }
+
+  .actionsColumn {
+    min-width: auto;
+  }
+
+  .rowActions {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .bulkActions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .bulkButtons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

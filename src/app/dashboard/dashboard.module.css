@@ -1,0 +1,380 @@
+.container {
+  min-height: 100vh;
+  background: hsl(var(--background));
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid hsl(var(--border));
+  background: hsl(var(--card));
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logoIcon {
+  font-size: 1.5rem;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatarButton {
+  padding: 0;
+  border-radius: 50%;
+}
+
+.dropdownContent {
+  min-width: 200px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.userName {
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+.userEmail {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.logoutItem {
+  color: hsl(var(--destructive));
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.welcomeSection {
+  margin-bottom: 2rem;
+}
+
+.welcomeTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+}
+
+.welcomeSubtitle {
+  color: hsl(var(--muted-foreground));
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  transition: box-shadow 0.2s;
+}
+
+.statCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.statHeader {
+  padding-bottom: 0.5rem;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.statContent {
+  padding-top: 0;
+}
+
+.statDescription {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.actionsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.actionCard,
+.accountCard {
+  height: fit-content;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.actionButton {
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.actionIcon {
+  font-size: 1.25rem;
+}
+
+.accountDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.accountRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.accountRow:last-child {
+  border-bottom: none;
+}
+
+.accountLabel {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.accountValue {
+  font-weight: 500;
+  color: hsl(var(--foreground));
+}
+
+.recentCard {
+  margin-bottom: 2rem;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.emptyState h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+}
+
+.emptyState p {
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1.5rem;
+}
+
+.emptyButton {
+  min-width: 150px;
+}
+
+/* Charts Section */
+.chartsSection {
+  margin-bottom: 2rem;
+}
+
+.chartsRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Overdue Alert */
+.overdueAlert {
+  margin-bottom: 1.5rem;
+  background: hsl(0 84% 95%);
+  border-color: hsl(0 84% 60%);
+}
+
+.overdueContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Tables Section */
+.tablesSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.invoiceLink {
+  color: hsl(var(--primary));
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.invoiceLink:hover {
+  text-decoration: underline;
+}
+
+.skeletonList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skeletonRow {
+  height: 40px;
+  width: 100%;
+}
+
+/* Upcoming Due */
+.upcomingCard {
+  height: fit-content;
+}
+
+.upcomingList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.upcomingItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: hsl(var(--muted) / 0.3);
+  border-radius: 0.5rem;
+}
+
+.upcomingInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.upcomingCustomer {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.upcomingRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.upcomingAmount {
+  font-weight: 600;
+}
+
+.upcomingDate {
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.emptyStateSmall {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: hsl(var(--muted-foreground));
+}
+
+/* Bottom Section */
+.bottomSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.reportsButton {
+  min-width: 250px;
+}
+
+@media (max-width: 1024px) {
+  .tablesSection {
+    grid-template-columns: 1fr;
+  }
+
+  .chartsRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .welcomeTitle {
+    font-size: 1.5rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .actionsSection {
+    grid-template-columns: 1fr;
+  }
+
+  .chartsRow {
+    grid-template-columns: 1fr;
+  }
+
+  .overdueContent {
+    flex-direction: column;
+    text-align: center;
+  }
+}
